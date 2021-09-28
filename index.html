@@ -6,10 +6,36 @@
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+          </div>
+        </div>
+      </nav>
+      <br><br>
         <div class="container" id="container">
-            <div id="box">
-                <img>
+          <div id="box">
+            <div class="media">
+              <img id="cover" class="align-self-start mr-3">
+              <div class="media-body">
+                <h3 id="title" class="mt-0"></h3>
+                <p id="album"></p>
+                <p id="artist"></p>
+                <p id="year"></p>
+              </div>
             </div>
+          </div>
+          <div class="row">
+          </div>
+            <button onclick="prev()" id="btnPrev" class="btn btn-warning">Prev</button>
+            <button onclick="next()" id="btnNext" class="btn btn-primary">Next</button>
         </div>
 
         <script src="assets/javascript/data.js"></script>
