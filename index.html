@@ -4,18 +4,19 @@
         <title>Mellifluous</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Make our breath Resonate!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link active" href="index.html">Home</span></a>
+            <a class="nav-item nav-link" href="about.html">About</a>
+            <a class="nav-item nav-link" href="info.html">Info</a>
           </div>
         </div>
       </nav>
@@ -29,13 +30,16 @@
                 <p id="album"></p>
                 <p id="artist"></p>
                 <p id="year"></p>
+                <progress id="duration" value="0" max="1" style="width:400px;"></progress>
+                <audio id="music"></audio>
               </div>
             </div>
-          </div>
-          <div class="row">
-          </div>
             <button onclick="prev()" id="btnPrev" class="btn btn-warning">Prev</button>
+            <button onclick="turnPlay()" id="btnPlay" class="btn btn-success">Play</button>
+            <button onclick="turnPause()" id="btnPlay" class="btn btn-danger">Stop</button>
             <button onclick="next()" id="btnNext" class="btn btn-primary">Next</button>
+
+          </div>
         </div>
 
         <script src="assets/javascript/data.js"></script>
