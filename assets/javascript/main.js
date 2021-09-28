@@ -59,7 +59,6 @@ function next() {
     // btnNext.preventDefault();
     NumIndex += 1
     img.src = 'assets/music/' + dataList[NumIndex].title + '/cover.jpg';
-    document.body.style.backgroundImage = "url('assets/music/" + dataList[NumIndex].title + "/cover.jpg')";
     title.innerHTML   = dataList[NumIndex].title;
     album.innerHTML   = dataList[NumIndex].album;
     artist.innerHTML  = dataList[NumIndex].artist;
@@ -73,8 +72,7 @@ function next() {
 function prev() {
     // btnNext.preventDefault();
     NumIndex -= 1;
-    img.src = 'assets/music/' + dataList[NumIndex].title + '/cover.jpg';
-    document.body.style.backgroundImage = "url('assets/music/" + dataList[NumIndex].title + "/cover.jpg')";
+    img.src = 'assets/music/' + dataList[NumIndex].title + '/cover.jpg
     title.innerHTML   = dataList[NumIndex].title;
     album.innerHTML   = dataList[NumIndex].album;
     artist.innerHTML  = dataList[NumIndex].artist;
