@@ -1,6 +1,7 @@
 var bg      = document.getElementById('bg-image');
 var box     = document.getElementById('box');
 var img     = document.getElementById('cover');
+var bigImg  = document.getElementById('bigCover');
 var title   = document.getElementById('title');
 var album   = document.getElementById('album');
 var artist  = document.getElementById('artist');
@@ -13,6 +14,8 @@ var btnPrev = document.getElementById('btnPrev');
 var btnPlay = document.getElementById('btnPlay');
 
 var NumIndex = 0;
+
+var upper = document.getElementById('upper');
 
 img.setAttribute('src','assets/music/' + dataList[NumIndex].title + '/cover.jpg');
 
@@ -53,6 +56,9 @@ function turnPlay(titleMusic) {
 
 function turnPause() {
   music.pause();
+}
+function turnResume() {
+  music.play();
 }
 
 function next() {
