@@ -27,6 +27,10 @@ img {
     padding: 10px;
 }
 
+#ttl {
+    font-size: 20px;
+}
+
 @media only screen and (max-width: 720px) {
   #box {
       margin-top: 5%;

@@ -1,3 +1,5 @@
+// Initial Firebase 
+var firebase = "https://firebasestorage.googleapis.com/v0/b/hibicarose.appspot.com/o/"
 // Select Var by ID
 var bg      = document.getElementById('bg-image');
 var box     = document.getElementById('box');
@@ -19,7 +21,7 @@ var btnPlay = document.getElementById('btnPlay');
 var NumIndex = 0;
 
 // Initial Load
-img.setAttribute('src','assets/music/' + dataList[NumIndex].title + '/cover.jpg');
+img.setAttribute('src', firebase + dataList[NumIndex].title + '%2Fcover.jpg?alt=media&token=' + dataList[NumIndex].imgtokens);
 title.innerHTML   = dataList[NumIndex].title;
 album.innerHTML   = dataList[NumIndex].album;
 artist.innerHTML  = dataList[NumIndex].artist;
@@ -49,43 +51,7 @@ function disBtnPrev() {
 
 function turnPlay(titleMusic) {
   titleMusic = dataList[NumIndex].title;
-  music.setAttribute('src','assets/music/' + titleMusic + '/' + titleMusic + '.mp3');
+  music.setAttribute('src',
+    firebase + dataList[NumIndex].title + '%2F' + dataList[NumIndex].title + '.mp3?alt=media&token=' + dataList[NumIndex].tokens);
   music.play();
-
-}
-
-function turnPause() {
-  music.pause();
-}
-
-function turnResume() {
-  music.play();
-}
-
-function next() {
-    // btnNext.preventDefault();
-    NumIndex += 1;
-    img.src = 'assets/music/' + dataList[NumIndex].title + '/cover.jpg';
-    title.innerHTML   = dataList[NumIndex].title;
-    album.innerHTML   = dataList[NumIndex].album;
-    artist.innerHTML  = dataList[NumIndex].artist;
-    year.innerHTML    = dataList[NumIndex].year;
-    if(music.play) {
-      turnPlay();
-    }
-    disBtnNext(); disBtnPrev();
-}
-
-function prev() {
-    // btnNext.preventDefault();
-    NumIndex -= 1;
-    img.src = 'assets/music/' + dataList[NumIndex].title + '/cover.jpg';
-    title.innerHTML   = dataList[NumIndex].title;
-    album.innerHTML   = dataList[NumIndex].album;
-    artist.innerHTML  = dataList[NumIndex].artist;
-    year.innerHTML    = dataList[NumIndex].year;
-    if(music.play) {
-      turnPlay();
-    }
-    disBtnNext(); disBtnPrev();
 }
