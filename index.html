@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>Mellifluous</title>
@@ -38,11 +37,33 @@
             <button onclick="turnResume()" id="btnResume" class="btn btn-info"><i class="fas fa-play-circle"></i></button>
             <button onclick="turnPause()" id="btnPlay" class="btn btn-danger"><i class="fas fa-pause"></i></button>
             <button onclick="next()" id="btnNext" class="btn btn-primary"><i class="fas fa-forward"></i></button>
-
           </div>
+        </div>
+        <hr width="80%" class="bg-primary">
+        <br>
+        <div class="container" id="container">
+          <h4>List of Songs</h4>
+          <div class="row">
+            <div class="col col-lg-2">
+              <button onclick="cat('houkai')" id="btnNext" class="ubtn">Houkai</button>
+              <br>
+              <button onclick="cat('japan')" id="btnNext" class="ubtn">Jp</button>
+              <br>
+              <button onclick="cat('west')" id="btnNext" class="ubtn">Ws</button>
+            </div>
+            <div class="col">
+              <table class="table table-hover">
+                <tbody id="theBox">
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
         </div>
 
         <script src="assets/javascript/data.js"></script>
+        <script src="assets/javascript/es6.js"></script>
         <script src="assets/javascript/main.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

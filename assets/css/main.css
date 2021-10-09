@@ -17,6 +17,15 @@ img {
     border: 1px solid white;
     border-radius: 10px;
 }
+.ubtn {
+    width: 100px;
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+    border: white 1px solid;
+    margin: 5px;
+    padding: 10px;
+}
 
 @media only screen and (max-width: 720px) {
   #box {

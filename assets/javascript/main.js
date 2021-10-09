@@ -1,3 +1,4 @@
+// Select Var by ID
 var bg      = document.getElementById('bg-image');
 var box     = document.getElementById('box');
 var img     = document.getElementById('cover');
@@ -9,27 +10,26 @@ var year    = document.getElementById('year');
 var music   = document.getElementById('music');
 var duration   = document.getElementById('duration');
 
+// The Buttons
 var btnNext = document.getElementById('btnNext');
 var btnPrev = document.getElementById('btnPrev');
 var btnPlay = document.getElementById('btnPlay');
 
+// Others
 var NumIndex = 0;
 
-var upper = document.getElementById('upper');
-
+// Initial Load
 img.setAttribute('src','assets/music/' + dataList[NumIndex].title + '/cover.jpg');
-
-
 title.innerHTML   = dataList[NumIndex].title;
 album.innerHTML   = dataList[NumIndex].album;
 artist.innerHTML  = dataList[NumIndex].artist;
 year.innerHTML    = dataList[NumIndex].year;
+btnPrev.disabled = true;
 
+// Functions
 music.addEventListener('timeupdate', function() {
   duration.setAttribute('value', this.currentTime / this.duration);
 });
-
-btnPrev.disabled = true;
 
 function disBtnNext() {
   if((NumIndex+1) == dataList.length) {
@@ -57,13 +57,14 @@ function turnPlay(titleMusic) {
 function turnPause() {
   music.pause();
 }
+
 function turnResume() {
   music.play();
 }
 
 function next() {
     // btnNext.preventDefault();
-    NumIndex += 1
+    NumIndex += 1;
     img.src = 'assets/music/' + dataList[NumIndex].title + '/cover.jpg';
     title.innerHTML   = dataList[NumIndex].title;
     album.innerHTML   = dataList[NumIndex].album;
