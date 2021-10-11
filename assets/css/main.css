@@ -1,3 +1,28 @@
+::-webkit-scrollbar {
+    width: 3px;
+}
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(3, 0, 156);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(112, 0, 0);
+}
+
+#dialog-window {
+    height: 200px;
+    border-bottom: blue 2px solid;
+    border-top: blue 2px solid;
+}
+
+#scrollable-content {
+    height: 200px;
+    overflow: auto;
+    background-color: white;
+}
+
 #box {
     height: 250px;
     border: 1px solid white;
