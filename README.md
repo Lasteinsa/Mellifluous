@@ -1,6 +1,6 @@
 <h3> Music App </h3>
 
-## Built With
+# Built With
 
 - JavaScript
 - HTML
