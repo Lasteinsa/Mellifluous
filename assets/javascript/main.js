@@ -33,25 +33,3 @@ music.addEventListener('timeupdate', function() {
   duration.setAttribute('value', this.currentTime / this.duration);
 });
 
-function disBtnNext() {
-  if((NumIndex+1) == dataList.length) {
-    btnNext.disabled = true;
-  } else {
-    btnNext.disabled = false;
-  }
-}
-
-function disBtnPrev() {
-  if((NumIndex) == 0) {
-    btnPrev.disabled = true;
-  } else {
-    btnPrev.disabled = false;
-  }
-}
-
-function turnPlay(titleMusic) {
-  titleMusic = dataList[NumIndex].title;
-  music.setAttribute('src',
-    firebase + dataList[NumIndex].title + '%2F' + dataList[NumIndex].title + '.mp3?alt=media&token=' + dataList[NumIndex].tokens);
-  music.play();
-}

@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-    width: 3px;
+    width: 1px;
 }
 ::-webkit-scrollbar-track {
     background: #ffffff;
@@ -11,45 +11,77 @@
     background: rgb(112, 0, 0);
 }
 
+img {
+    width: 100px;
+    height: 100px;
+    border: 0px solid #20124d;
+    border-radius: 10px;
+}
+
+progress {
+    border-radius: 7px; 
+    width: 80%; 
+    height: 8px;
+}
+progress::-webkit-progress-bar {
+    background-color: rgb(122, 122, 122);
+    border-radius: 5px;
+}
+progress::-webkit-progress-value {
+    background-color: rgb(104, 20, 214);
+    border-radius: 7px;
+}
+progress::-moz-progress-bar {
+    /* style rules */
+}
+
+td:hover {
+    color: white;
+    background-color: #674ea7;
+}
+
 #dialog-window {
     height: 200px;
-    border-bottom: blue 2px solid;
-    border-top: blue 2px solid;
+    border-top: blue 2px dotted;
 }
 
 #scrollable-content {
     height: 200px;
     overflow: auto;
-    background-color: white;
 }
 
 #box {
     height: 250px;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: white;
-    margin-top: 10%;
+    margin-top: 5px;
     padding-top: 40px;
     padding-left: 25%;
     padding-bottom: 20px;
 }
+
 .media-body p {
    line-height: 3px;
 }
-img {
-    width: 100px;
-    height: 100px;
-    border: 1px solid white;
-    border-radius: 10px;
-}
+
 .ubtn {
-    width: 100px;
-    background-color: blue;
+    width: 80px;
+    background-color: #674ea7;
+    border: #674ea7 0px solid;
     color: white;
     border-radius: 30px;
-    border: white 1px solid;
+    border: 1px solid;
     margin: 5px;
-    padding: 10px;
+    padding: 4px;
+}
+
+.ubtn:hover {
+    background-color: white;
+    color: #674ea7;
+    border: #674ea7 1px solid;
+}
+
+.dark-mode {
+    background-color: #20124d;
+    color: white;
 }
 
 #ttl {

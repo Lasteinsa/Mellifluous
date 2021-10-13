@@ -1,15 +1,17 @@
 <html>
     <head>
         <title>Mellifluous</title>
+        <link rel="icon" href="assets/icon.png" type="image/png" sizes="16x16">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/notmine.css">
+        <link rel="stylesheet" href="assets/css/library.css">
+        <link rel="stylesheet" href="assets/css/starry.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary ein-primary">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -19,7 +21,15 @@
           </div>
         </div>
       </nav>
+        <div id='starry'></div>
+        <div id='starry1'></div>
+        <div id='starry2'></div>
+        <div id='starry3'></div>
         <div class="container" id="container">
+          <br>
+          <div class="d-flex justify-content-center">
+            <input type="checkbox" class="toggle" checked onclick="bgChange()">
+          </div>
           <div id="box" >
             <div class="media d-flex justify-content-center">
               <img id="cover" class="align-self-start mr-3">
@@ -28,33 +38,29 @@
                 <p id="album"></p>
                 <p id="artist"></p>
                 <p id="year"></p>
-                <progress id="duration" value="0" max="1" style="width:80%;"></progress>
+                <progress id="duration" value="0" max="1"></progress>
                 <audio id="music"></audio>
               </div>
             </div>
-            <button onclick="prev()" id="btnPrev" class="btn btn-warning"><i class="fas fa-backward"></i></button>
-            <button onclick="turnPlay()" id="btnPlay" class="btn btn-success"><i class="fas fa-play"></i></button>
-            <button onclick="turnResume()" id="btnResume" class="btn btn-info"><i class="fas fa-play-circle"></i></button>
-            <button onclick="turnPause()" id="btnPlay" class="btn btn-danger"><i class="fas fa-pause"></i></button>
-            <button onclick="next()" id="btnNext" class="btn btn-primary"><i class="fas fa-forward"></i></button>
+            <br>
+            <button onclick="prev()" id="btnPrev" class="btn ein-primary"><i class="fas fa-backward"></i></button>
+            <button onclick="turnPlay()" id="btnPlay" class="btn ein-primary"><i class="fas fa-play"></i></button>
+            <button onclick="turnResume()" id="btnResume" class="btn ein-primary"><i class="fas fa-play-circle"></i></button>
+            <button onclick="turnPause()" id="btnPlay" class="btn ein-primary"><i class="fas fa-pause"></i></button>
+            <button onclick="next()" id="btnNext" class="btn ein-primary"><i class="fas fa-forward"></i></button>
           </div>
         </div>
-        <hr width="80%" class="bg-primary">
-        <br>
         <div class="container" id="container">
           <h4>List of Songs</h4>
+          <button onclick="cat('houkai')" id="btnNext" class="ubtn">Houkai</button>
+          <button onclick="cat('japan')" id="btnNext" class="ubtn">Japan</button>
+          <button onclick="cat('west')" id="btnNext" class="ubtn">West</button>
+          <br><br>
           <div class="row">
-            <div class="col col-lg-2">
-              <button onclick="cat('houkai')" id="btnNext" class="ubtn">Houkai</button>
-              <br>
-              <button onclick="cat('japan')" id="btnNext" class="ubtn">Japan</button>
-              <br>
-              <button onclick="cat('west')" id="btnNext" class="ubtn">West</button>
-            </div>
-            <div class="col">
+            <div class="col col-md-12">
               <div id="dialog-window">
                 <div id="scrollable-content">
-                  <table class="table table-hover">
+                  <table class="table">
                     <tbody id="theBox">
     
                     </tbody>
@@ -63,9 +69,7 @@
               </div>
             </div>
           </div>
-
         </div>
-
         <script src="assets/javascript/data.js"></script>
         <script src="assets/javascript/es6.js"></script>
         <script src="assets/javascript/main.js"></script>

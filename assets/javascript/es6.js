@@ -76,4 +76,17 @@ turnPlay = (() => {
     turnPlayParams = NumIndex;
     music.setAttribute('src', firebase + dataList[NumIndex].title + '%2F' + dataList[NumIndex].title + '.mp3?alt=media&token=' + dataList[NumIndex].tokens);
     music.play();
+});
+
+bgChange = (() => {
+    dark = document.body;
+    var starry = document.getElementById('starry');
+    var starry1 = document.getElementById('starry1');
+    var starry2 = document.getElementById('starry2');
+    var starry3 = document.getElementById('starry3');
+    dark.classList.toggle("dark-mode");
+    starry.classList.toggle("stars");
+    starry1.classList.toggle("stars1");
+    starry2.classList.toggle("stars2");
+    starry3.classList.toggle("stars3");
 })
