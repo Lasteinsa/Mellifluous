@@ -2,3 +2,7 @@
     background-color: #351c75 !important;
     color: white;
 }
+.ein-btn:hover {
+    background-color: #c4b1f5 !important;
+    color: #4b21b4;
+}
