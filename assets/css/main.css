@@ -11,6 +11,15 @@
     background: rgb(112, 0, 0);
 }
 
+@font-face {
+    font-family: 'Product Sans';
+    src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+* {
+    font-family: 'Product Sans';
+}
+
 img {
     width: 100px;
     height: 100px;
