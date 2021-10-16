@@ -33,7 +33,7 @@ progress {
     height: 8px;
 }
 progress::-webkit-progress-bar {
-    background-color: rgb(122, 122, 122);
+    background-color: rgb(213, 198, 255);
     border-radius: 5px;
 }
 progress::-webkit-progress-value {
@@ -51,7 +51,7 @@ td:hover {
 
 #dialog-window {
     height: 200px;
-    border-top: blue 2px dotted;
+    
 }
 
 #scrollable-content {

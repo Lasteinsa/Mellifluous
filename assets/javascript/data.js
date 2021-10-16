@@ -48,5 +48,55 @@ var dataList = [
         cat     : "houkai",
         tokens  : "8b8ce957-aa7e-4e79-94ea-cbd8f3a05cee",
         imgtokens : "546d42fe-8bff-45cb-8894-37e292132462"
+    },
+    {
+        id      : 6,
+        title   : "Ano Yume wo Nazotte",
+        artist  : "YOASOBI",
+        album   : "Ano Yume wo Nazotte",
+        year    : 2020,
+        cat     : "japan",
+        tokens  : "cb4e400d-60d5-4e83-917a-46053df4187b",
+        imgtokens : "ba202168-c1ab-41ca-9927-9a577e07cf2f"
+    },
+    {
+        id      : 7,
+        title   : "Halzion",
+        artist  : "YOASOBI",
+        album   : "Halzion",
+        year    : 2020,
+        cat     : "japan",
+        tokens  : "4a938dce-5b2f-4a18-88f6-027e44f8f457",
+        imgtokens : "785a1c29-a0db-4277-8f4e-14e56076fd43"
+    },
+    {
+        id      : 8,
+        title   : "Haruka",
+        artist  : "YOASOBI",
+        album   : "Haruka",
+        year    : 2020,
+        cat     : "japan",
+        tokens  : "cb6f67fa-c803-45f2-a09a-eed740f2d6be",
+        imgtokens : "13722e58-892a-433a-a5bd-f771a7c7025d"
+    },
+    {
+        id      : 9,
+        title   : "Kaibutsu",
+        artist  : "YOASOBI",
+        album   : "Kaibutsu",
+        year    : 2021,
+        cat     : "japan",
+        tokens  : "efa40d0f-548d-4ed6-bdec-caae55eecc83",
+        imgtokens : "728583ef-c8aa-44bf-bfa9-3b7bceacab3a"
+    },
+    {
+        id      : 10,
+        title   : "Yoru ni Kakeru",
+        artist  : "YOASOBI",
+        album   : "Yoru ni Kakeru",
+        year    : 2019,
+        cat     : "japan",
+        tokens  : "dba50c85-367a-40e2-b421-c2a812ede227",
+        imgtokens : "2588b156-178d-4bdb-932a-d4e9c1a2441d"
     }
 ];
