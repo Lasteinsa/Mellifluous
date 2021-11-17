@@ -43,11 +43,20 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
     /* style rules */
 }
-
+thead {
+    background-color: #674ea7;
+    color: white;
+}
 td:hover {
     color: white;
     background-color: #674ea7;
 }
+
+div#starry, div#starry1, div#starry2, div#starry3 {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -100px;
+} 
 
 #dialog-window {
     height: 200px;
@@ -80,6 +89,7 @@ td:hover {
     border: 1px solid;
     margin: 5px;
     padding: 4px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .ubtn:hover {

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> All </title>
+        <link rel="icon" href="assets/icon.png" type="image/png" sizes="16x16">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/notmine.css">
+        <link rel="stylesheet" href="assets/css/library.css">
+        <link rel="stylesheet" href="assets/css/starry.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          #table {
+            margin: 0px 50px !important;
+          }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary ein-primary">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a id="ttl" class="nav-item nav-link active" href="index.html">Make our breath Resonate</span></a>
+            </div>
+          </div>
+        </nav>
+        <div id='starry'></div>
+        <div id='starry1'></div>
+        <div id='starry2'></div>
+        <div id='starry3'></div>
+        <br><br>
+        <div class="d-flex justify-content-center"> <h3>List All Songs</h3></div>
+        <div id="table">
+          <table class="table rounded">
+            <thead>
+              <tr>
+                <td>Title</td>
+                <td>Album</td>
+                <td>Artist</td>
+              </tr>
+            </thead>
+            <tbody id="theBox">
+              <!-- List of Songs Here-->
+            </tbody>
+          </table>
+        </div>
+        <script>
+          dark = document.body;
+          var starry = document.getElementById('starry');
+          var starry1 = document.getElementById('starry1');
+          var starry2 = document.getElementById('starry2');
+          var starry3 = document.getElementById('starry3');
+          dark.classList.toggle("dark-mode");
+          starry.classList.toggle("stars");
+          starry1.classList.toggle("stars1");
+          starry2.classList.toggle("stars2");
+          starry3.classList.toggle("stars3");
+        </script>
+        <script src="assets/javascript/data.js"></script>
+        <script src="assets/javascript/all.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

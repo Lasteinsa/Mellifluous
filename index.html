@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary ein-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary ein-primary" style="top:0;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,14 +21,14 @@
           </div>
         </div>
       </nav>
-        <div id='starry'></div>
-        <div id='starry1'></div>
-        <div id='starry2'></div>
-        <div id='starry3'></div>
+      <div id='starry'></div>
+      <div id='starry1'></div>
+      <div id='starry2'></div>
+      <div id='starry3'></div>
         <div class="container" id="container">
           <br>
           <div class="d-flex justify-content-center">
-            <input type="checkbox" class="toggle" onclick="bgChange()">
+            <input id="bgstarry" type="checkbox" class="toggle" onclick="bgChange()">
           </div>
           <div id="box" >
             <div class="media d-flex justify-content-center">
@@ -55,6 +55,7 @@
           <button onclick="cat('houkai')" id="btnNext" class="ubtn">Houkai</button>
           <button onclick="cat('japan')" id="btnNext" class="ubtn">Japan</button>
           <button onclick="cat('west')" id="btnNext" class="ubtn">West</button>
+          <button onclick="showElse()" id="btnNext" class="ubtn">Else</button>
           <br><br>
           <div class="row">
             <div class="col col-md-12">
@@ -62,7 +63,7 @@
                 <div id="scrollable-content">
                   <table class="table">
                     <tbody id="theBox">
-    
+                      <!-- List of Songs Here-->
                     </tbody>
                   </table>
                 </div>

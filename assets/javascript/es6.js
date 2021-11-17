@@ -89,4 +89,8 @@ bgChange = (() => {
     starry1.classList.toggle("stars1");
     starry2.classList.toggle("stars2");
     starry3.classList.toggle("stars3");
-})
+});
+
+showElse = (() => {
+    window.location.href = ('all.html');
+});

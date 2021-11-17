@@ -1,5 +1,6 @@
 // Initial Firebase 
-var firebase = "https://firebasestorage.googleapis.com/v0/b/hibicarose.appspot.com/o/"
+var firebase = "https://firebasestorage.googleapis.com/v0/b/hibicarose.appspot.com/o/";
+
 // Select Var by ID
 var bg      = document.getElementById('bg-image');
 var box     = document.getElementById('box');
