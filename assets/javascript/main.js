@@ -34,3 +34,10 @@ music.addEventListener('timeupdate', function() {
   duration.setAttribute('value', this.currentTime / this.duration);
 });
 
+window.addEventListener('load', (event) => {
+  if(localStorage.getItem('darkModeStatus')=="true"){
+    document.getElementById('bgstarry').checked = true;
+    bgChange();
+  }
+});
+
