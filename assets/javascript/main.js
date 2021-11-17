@@ -27,7 +27,7 @@ title.innerHTML   = dataList[NumIndex].title;
 album.innerHTML   = dataList[NumIndex].album;
 artist.innerHTML  = dataList[NumIndex].artist;
 year.innerHTML    = dataList[NumIndex].year;
-btnPrev.disabled = true;
+btnPrev.disabled  = true;
 
 // Functions
 music.addEventListener('timeupdate', function() {
