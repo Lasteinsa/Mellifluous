@@ -51,7 +51,7 @@ plays = ((titles) => {
     }
     NumIndex = newPlay - 1;
     starts(NumIndex);
-    
+    localStorage.setItem('lastPlay', NumIndex);
 });
 
 /**

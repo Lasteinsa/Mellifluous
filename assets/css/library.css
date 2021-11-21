@@ -6,3 +6,38 @@
     background-color: #c4b1f5 !important;
     color: #4b21b4;
 }
+.ubtn {
+    width: 80px;
+    background-color: #674ea7;
+    border: #674ea7 0px solid;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid;
+    margin: 5px;
+    padding: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ubtn:hover {
+    background-color: white;
+    color: #674ea7;
+    border: #674ea7 1px solid;
+}
+#loader {
+    background-image: url('../elements.jpg');
+    background-color: white ;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    bottom: 0;
+    min-height: 100%;
+    animation: fade 3s infinite;
+} 
+.centers {
+    text-align: center;
+}
+@keyframes fade {
+    0%,100% { opacity: 0 }
+    50% { opacity: 1 }
+}

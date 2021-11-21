@@ -80,24 +80,6 @@ div#starry, div#starry1, div#starry2, div#starry3 {
    line-height: 3px;
 }
 
-.ubtn {
-    width: 80px;
-    background-color: #674ea7;
-    border: #674ea7 0px solid;
-    color: white;
-    border-radius: 30px;
-    border: 1px solid;
-    margin: 5px;
-    padding: 4px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.ubtn:hover {
-    background-color: white;
-    color: #674ea7;
-    border: #674ea7 1px solid;
-}
-
 .dark-mode {
     background-color: #20124d;
     color: white;
