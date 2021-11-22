@@ -21,6 +21,7 @@ cat = ((param) => {
  * Manipulate Player
  */
 starts = ((startParams) => {
+    localStorage.setItem('lastPlay', NumIndex);
     img.src = firebase + dataList[NumIndex].title + '%2Fcover.jpg?alt=media&token=' + dataList[NumIndex].imgtokens;
     title.innerHTML   = dataList[startParams].title;
     album.innerHTML   = dataList[startParams].album;
@@ -51,7 +52,6 @@ plays = ((titles) => {
     }
     NumIndex = newPlay - 1;
     starts(NumIndex);
-    localStorage.setItem('lastPlay', NumIndex);
 });
 
 /**
