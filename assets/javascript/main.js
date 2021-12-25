@@ -61,8 +61,17 @@ if(NumIndex == 0) {
 
 // Time bar
 music.addEventListener('timeupdate', function() {
+  function formatTime(time) {
+    var min = Math.floor(time / 60);
+    var sec = Math.floor(time % 60);
+    return min + ":" + (sec < 10 ? "0" + sec : sec);
+  }
+  const currentTime = document.getElementById("current-time");
+  var current = this.currentTime;
   duration.setAttribute('value', this.currentTime / this.duration);
+  currentTime.textContent = formatTime(current);
 });
+
 
 // Navbar
 let navbarEl = `<nav class="navbar navbar-expand-lg navbar-dark bg-primary ein-primary" style="top:0;">

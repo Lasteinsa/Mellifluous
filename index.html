@@ -9,9 +9,6 @@
         <link rel="stylesheet" href="assets/css/starry.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-          
-      </style>
     </head>
     <body>
       <div id="loader" class="centers">
@@ -27,47 +24,48 @@
         <div id='starry3'></div>
 
 
-        <div class="container" id="container">
-          <br>
-          <div class="d-flex justify-content-center">
-            <input id="bgstarry" type="checkbox" class="toggle" onclick="bgChange()">
-          </div>
-          <div id="box" >
+        <div class="d-flex justify-content-center my-4">
+          <input id="bgstarry" type="checkbox" class="toggle" onclick="bgChange()">
+        </div>  
+        <div class="row">
+          <div class="col-sm-7 p-5 rounded">
             <div class="media d-flex justify-content-center">
-              <img id="cover" class="align-self-start mr-3">
+              <img id="cover" class="main-cover align-self-start mr-3">
               <div class="media-body">
                 <h3 id="title" class="mt-0"></h3>
                 <p id="album"></p>
                 <p id="artist"></p>
                 <p id="year"></p>
+                <p id="current-time" class="text-right">00:00</p>
                 <progress id="duration" value="0" max="1"></progress>
                 <audio id="music"></audio>
               </div>
             </div>
             <br>
-            <button onclick="prev()" id="btnPrev" class="btn ein-btn ein-primary"><i class="fas fa-backward"></i></button>
-            <button onclick="turnPlay()" id="btnPlay" class="btn ein-btn ein-primary"><i class="fas fa-play"></i></button>
-            <button onclick="turnResume()" id="btnResume" class="btn ein-btn ein-primary"><i class="fas fa-play-circle"></i></button>
-            <button onclick="turnPause()" id="btnPlay" class="btn ein-btn ein-primary"><i class="fas fa-pause"></i></button>
-            <button onclick="next()" id="btnNext" class="btn ein-btn ein-primary"><i class="fas fa-forward"></i></button>
+            <button onclick="prev()" id="btnPrev" class="btn ein-btn ein-primary" title="Previous"><i class="fas fa-backward"></i></button>
+            <button onclick="turnPlay()" id="btnPlay" class="btn ein-btn ein-primary" title="Play"><i class="fas fa-play"></i></button>
+            <button onclick="turnResume()" id="btnResume" class="btn ein-btn ein-primary" title="Resume"><i class="fas fa-play-circle"></i></button>
+            <button onclick="turnPause()" id="btnPlay" class="btn ein-btn ein-primary" title="Pause"><i class="fas fa-pause"></i></button>
+            <button onclick="next()" id="btnNext" class="btn ein-btn ein-primary" title="Next"><i class="fas fa-forward"></i></button>
           </div>
-        </div>
-        <div class="container" id="container">
-          <h4>List of Songs</h4>
-          <button onclick="cat('houkai')" id="btnNext" class="ubtn">Houkai</button>
-          <button onclick="cat('japan')" id="btnNext" class="ubtn">Japan</button>
-          <button onclick="cat('west')" id="btnNext" class="ubtn">West</button>
-          <button onclick="showElse()" id="btnNext" class="ubtn">Else</button>
-          <br><br>
-          <div class="row">
-            <div class="col col-md-12">
-              <div id="dialog-window">
-                <div id="scrollable-content">
-                  <table class="table">
-                    <tbody id="theBox">
-                      <!-- List of Songs Here-->
-                    </tbody>
-                  </table>
+          <div class="col col-sm-5 p-5 rounded">
+            <h4>List of Songs</h4>
+            <h6>Let us fight for what beautiful in this world </h6>
+            <button onclick="cat('houkai')" id="btnNext" class="ubtn">Houkai</button>
+            <button onclick="cat('japan')" id="btnNext" class="ubtn">Japan</button>
+            <button onclick="cat('west')" id="btnNext" class="ubtn">West</button>
+            <button onclick="showElse()" id="btnNext" class="ubtn">Else</button>
+            <br><br>
+            <div class="row">
+              <div class="col col-md-12">
+                <div id="dialog-window">
+                  <div id="scrollable-content">
+                    <table class="table">
+                      <tbody id="theBox">
+                        <!-- List of Songs Here-->
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>

@@ -11,6 +11,12 @@
     background: rgb(112, 0, 0);
 }
 
+/* Overriding Bootstrap Value!!! */
+
+.rounded {
+    border-radius: 20px !important;
+}
+
 @font-face {
     font-family: 'Product Sans';
     src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
@@ -20,7 +26,7 @@
     font-family: 'Product Sans';
 }
 
-img {
+.main-cover {
     width: 100px;
     height: 100px;
     border: 0px solid #20124d;
@@ -29,7 +35,7 @@ img {
 
 progress {
     border-radius: 7px; 
-    width: 80%; 
+    width: 100%; 
     height: 8px;
 }
 progress::-webkit-progress-bar {
@@ -64,16 +70,8 @@ div#starry, div#starry1, div#starry2, div#starry3 {
 }
 
 #scrollable-content {
-    height: 200px;
+    height: 120%;
     overflow: auto;
-}
-
-#box {
-    height: 250px;
-    margin-top: 5px;
-    padding-top: 40px;
-    padding-left: 25%;
-    padding-bottom: 20px;
 }
 
 .media-body p {
