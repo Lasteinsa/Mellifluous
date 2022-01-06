@@ -10,7 +10,9 @@ cat = ((param) => {
     dataList.forEach(res => {
         if(param == res.cat) {
             elemen  +=  `<tr>
-                            <td id="${res.id}" class="res" onclick="plays(${res.id})">${res.title}</td>
+                            <td id="${res.id}" class="res" onclick="plays(${res.id})" style="background-color:white;color:black;border-left:solid 3px blue;">${res.title}
+                            <br><small class="mb-3">${res.artist}</small>
+                            </td>
                         </tr>`;
         }
     });

@@ -54,8 +54,8 @@ thead {
     color: white;
 }
 td:hover {
-    color: white;
-    background-color: #674ea7;
+    color: white !important;
+    background-color: #674ea7 !important;
 }
 
 div#starry, div#starry1, div#starry2, div#starry3 {
@@ -69,11 +69,6 @@ div#starry, div#starry1, div#starry2, div#starry3 {
     
 }
 
-#scrollable-content {
-    height: 200px;
-    overflow: auto;
-}
-
 .media-body p {
    line-height: 3px;
 }
@@ -85,14 +80,4 @@ div#starry, div#starry1, div#starry2, div#starry3 {
 
 #ttl {
     font-size: 20px;
-}
-
-@media only screen and (max-width: 720px) {
-  #box {
-      margin-top: 5%;
-      padding-top: 40px;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-bottom: 20px;
-  }
 }
