@@ -44,7 +44,7 @@ window.addEventListener('load', (event) => {
 
 // Checking Last Played
 if(localStorage.getItem('lastPlay') != null) {
-  NumIndex = localStorage.getItem('lastPlay');
+  NumIndex = parseInt(localStorage.getItem('lastPlay'));
 }
 
 // Sett Initial Song

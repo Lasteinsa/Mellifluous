@@ -70,7 +70,7 @@ div#starry, div#starry1, div#starry2, div#starry3 {
 }
 
 #scrollable-content {
-    height: 120%;
+    height: 200px;
     overflow: auto;
 }
 
